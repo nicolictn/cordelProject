@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*IMPORTAÇÕES*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root {
+    --fonte-header: 'Passion One', sans-serif; 
+    --fonte-text: 'Sriracha', cursive;
+}
+
+/*GLOBAL*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0px;
+}
+
+
+body {
+    background-color: darkgray;
+    min-height: 100vh;
+}
+
+/*HEADER*/
+header {
+    font-family: var(--fonte-header);
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+
+header > h1 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+header a:hover, footer a:hover {
+    color: rgb(253, 170, 61);
+    transition: 0.8s;
+}
+
+/*MAIN*/
+/* main {
+    max-width: 1200px;
+    background-color: white;
+    margin: auto;
+} */
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-text);
+    font-size: 3.5vw;
+    background-color: white;
+}
+
+section > p {
+    padding-bottom: 1.5em;
+}
+
+.fundo-p {
+    background-color: rgba(0, 0, 0, 0.342);
+    display: inline-block;
+    margin: 12px;
+    color: white;
+}
+
+section.background-img-1 {
+    background: black url('../imgs/background001.jpg') right center no-repeat fixed;
+    box-shadow: 1px 5px 5px  rgba(0, 0, 0, 0.30);
+    background-size: cover;
+
+}
+
+section.background-img-2 {
+    background: black url('../imgs/background002.jpg') right center no-repeat fixed;
+    box-shadow: 1px 5px 5px  hsla(0, 0%, 0%, 0.40);
+    background-size: cover;
+}
+
+/*FOOTER*/
+
+footer {
+    max-width: 1600px;
+}
+
+footer > p {
+   text-align: center;
+   background-color: black;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 12px;
+}
